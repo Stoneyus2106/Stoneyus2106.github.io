@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Output</title>
+    <script>
+        function display_value() {
+            const urlparams = new URLSearchParams(window.location.search)
+            document.getElementById('output').innerHTML = urlparams.get('sid')
+            document.getElementById('output1').innerHTML = urlparams.get('sname')
+            document.getElementById('output2').innerHTML = urlparams.get('tel')
+        }
+    </script>
+</head>
+<body onload="display_value()">
+    <p id="output"></p>
+    <p id="output1"></p>
+    <p id="output2"></p>
+</body>
+</html>
