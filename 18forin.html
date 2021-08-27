@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forin</title>
+    <script>
+        let car = ['car1','car2','car3']
+        function show_array() {
+            for(let i in car){
+                document.getElementById('output').innerHTML += car[i] + '<br>'
+            }
+        }
+    </script>
+</head>
+<body onload="show_array()">
+
+    <p id="output"></p>
+    
+</body>
+</html>
